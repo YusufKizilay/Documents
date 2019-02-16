@@ -1,0 +1,11 @@
+Rabbitmq
+- An exchange connect to queue via binding and binding_key.
+
+-Producer need to specify routing key. Exchange compares two keys(Routing and binding key) depends on type of exchange
+
+- Type of exchange
+* Fanout :Ignores routing key and sends message to all queue
+* Direct :Exchange sens messages to queue where routing key exactly same as binding key
+* Topic  :allows partial match of keys.
+* Header :uses message hesader instead of routing key
+* Default :compares routing key with queue name not binding keys
